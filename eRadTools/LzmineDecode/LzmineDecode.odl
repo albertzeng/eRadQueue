@@ -1,0 +1,16 @@
+// LzmineDecode.odl : type library source for LzmineDecode.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (LzmineDecode.tlb).
+
+[ uuid(B5C83FF1-8A23-4A9B-9CEF-1AFBD3E9F12A), version(1.0) ]
+library LzmineDecode
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

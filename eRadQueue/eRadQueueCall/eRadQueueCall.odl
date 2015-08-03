@@ -1,0 +1,16 @@
+// eRadQueueCall.odl : type library source for eRadQueueCall.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (eRadQueueCall.tlb).
+
+[ uuid(2189BAA1-7DD1-4B46-BF3F-2793A9428C0F), version(1.0) ]
+library ERadQueueCall
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,562 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\eRadSetQueueController.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "eRadSetQueueController DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "eRadSetQueueController\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "eRadSetQueueController.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "eRadSetQueueController Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ERADSETQUEUECONTROLLER REGISTRY DISCARDABLE    "ERadSetQueueController.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_GENERAL DIALOGEX 0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "基本配置"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,190
+    GROUPBOX        "日志管理",IDC_STATIC,7,207,237,84
+    CONTROL         "跟踪类型",IDC_CHECK_LOG_TRACK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,219,110,10
+    CONTROL         "错误类型",IDC_CHECK_LOG_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,219,110,10
+    CONTROL         "调试类型",IDC_CHECK_LOG_DEBUG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,237,110,10
+    CONTROL         "消息类型",IDC_CHECK_LOG_MESSAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,237,110,10
+    GROUPBOX        "数据配置",IDC_STATIC,254,7,237,100
+    LTEXT           "数据库：",IDC_STATIC,261,20,88,8
+    PUSHBUTTON      "...",IDC_BUTTON_EIS_DATABASE,349,18,20,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_EIS_DATABASE,374,18,110,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "科室：",IDC_STATIC,261,36,110,8
+    COMBOBOX        IDC_COMBO_DEPARTMENT,374,34,110,200,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "语音配置",IDC_STATIC,254,117,237,174
+    LTEXT           "语音类型：",IDC_STATIC,261,131,110,8
+    COMBOBOX        IDC_COMBO_VOICE_CLASS,374,128,110,200,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "语音语速：",IDC_STATIC,261,147,109,8
+    EDITTEXT        IDC_EDIT_VOICE_RATE,374,143,110,12,ES_AUTOHSCROLL
+    LTEXT           "语音音量：",IDC_STATIC,261,163,115,8
+    EDITTEXT        IDC_EDIT_VOICE_VOLUME,375,160,109,12,ES_AUTOHSCROLL
+    LTEXT           "测试数据：",IDC_STATIC,261,179,110,8
+    PUSHBUTTON      "语音测试",IDC_BUTTON_VOICE_PLAY,374,176,110,12
+    EDITTEXT        IDC_EDIT_VOICE_PLAY,261,192,223,57,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "注：若使用科大飞讯语音，语音音速调节范围（-500至+500），语音音量范围（-20至+20），其他语音类型的语音音速范围（-10至10）、语音音量（0 - 100）",
+                    IDC_STATIC,261,254,223,37
+    CONTROL         "直接登录工号：",IDC_CHECK_AUTO_LOGIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,24,68,13
+    EDITTEXT        IDC_EDIT_AUTO_DOCTOR_CODE,98,22,69,14,ES_AUTOHSCROLL
+    CONTROL         "支持屏幕上病人隐私保护(姓名部分用'○'替代)",
+                    IDC_CHECK_HIDE_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,40,208,13
+END
+
+IDD_DIALOG_CONTROLLER DIALOGEX 0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "控制台配置"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_CONTROLLER,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,237,158
+    PUSHBUTTON      "背景色",IDC_BUTTON_CONTROLLER_BACKGROUND,7,172,25,12
+    PUSHBUTTON      "字体",IDC_BUTTON_CONTROLLER_FONT,59,172,25,12
+    PUSHBUTTON      "背景色",IDC_BUTTON_TITLE_BACKGROUND,87,172,25,12
+    PUSHBUTTON      "前景色",IDC_BUTTON_TITLE_FOREGROUND,113,172,25,12
+    PUSHBUTTON      "字体",IDC_BUTTON_TITLE_FONT,139,172,25,12
+    PUSHBUTTON      "背景色",IDC_BUTTON_SCROLL_BACKGROUND,167,172,25,12
+    PUSHBUTTON      "前景色",IDC_BUTTON_SCROLL_FOREGROUND,193,172,25,12
+    PUSHBUTTON      "字体",IDC_BUTTON_SCROLL_FONT,219,172,25,12
+    CTEXT           "呼叫区文字",IDC_STATIC_CONTROLLER,7,191,77,100,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "标题条文字",IDC_STATIC_TITLE,87,191,77,100,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "滚动区文字",IDC_STATIC_SCROLL,167,191,77,100,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    GROUPBOX        "基本配置",IDC_STATIC,254,7,237,161
+    LTEXT           "控制台编号：",IDC_STATIC,261,20,110,8
+    EDITTEXT        IDC_EDIT_CONTROLLER_NODE,374,18,110,12,ES_AUTOHSCROLL
+    LTEXT           "控制台名称：",IDC_STATIC,261,36,110,8
+    EDITTEXT        IDC_EDIT_CONTROLLER_NAME,374,34,110,12,ES_AUTOHSCROLL
+    LTEXT           "控制台模式：",IDC_STATIC,261,52,110,8
+    COMBOBOX        IDC_COMBO_CONTROLLER_MODE,374,50,110,200,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "位置（左、上、宽、高）：",IDC_STATIC,261,68,110,8
+    EDITTEXT        IDC_EDIT_CONTROLLER_LEFT,374,66,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTROLLER_TOP,402,66,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTROLLER_WIDTH,431,66,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTROLLER_HEIGHT,459,66,25,12,ES_AUTOHSCROLL
+    LTEXT           "显示行、列数：",IDC_STATIC,261,84,110,8
+    EDITTEXT        IDC_EDIT_CONTROLLER_ROWS,374,82,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTROLLER_COLS,402,82,25,12,ES_AUTOHSCROLL
+    CONTROL         "自顶向下",IDC_CHECK_CONTROLLER_FROM_TOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,431,83,53,10
+    CONTROL         "显示标题条：",IDC_CHECK_TITLE_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,99,110,10
+    EDITTEXT        IDC_EDIT_TITLE_CONTENT,374,98,110,12,ES_AUTOHSCROLL
+    LTEXT           "标题条高度（像素数）：",IDC_STATIC,261,116,110,8
+    EDITTEXT        IDC_EDIT_TITLE_HEIGHT,374,114,110,12,ES_AUTOHSCROLL
+    GROUPBOX        "滚动区配置",IDC_STATIC,254,172,237,98
+    CONTROL         "显示滚动区",IDC_CHECK_SCROLL_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,184,110,10
+    LTEXT           "显示高度（像素数）：",IDC_STATIC,261,201,110,8
+    EDITTEXT        IDC_EDIT_SCROLL_HEIGHT,374,199,110,12,ES_AUTOHSCROLL
+    LTEXT           "显示速度（1 - 100）：",IDC_STATIC,261,217,110,8
+    EDITTEXT        IDC_EDIT_SCROLL_SPEED,374,215,110,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCROLL_CONTENT,261,231,223,32,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_INSERT,254,277,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,350,277,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,441,277,50,14
+    CONTROL         "倒序显示(单队列等候模式)",IDC_CHECK_BDESC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,129,110,10
+    CONTROL         "滚动显示(单队列等候模式)",IDC_CHECK_BSCROLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,142,110,10
+    LTEXT           "显示速度(1 - 100):",IDC_STATIC,375,141,80,8
+    EDITTEXT        IDC_EDIT_QUEUESCROLL_SPEED,456,140,28,10,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MODE0_GENERAL DIALOG DISCARDABLE  0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "常规排队模式"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,284
+    GROUPBOX        "其他配置",IDC_STATIC,254,7,237,284
+END
+
+IDD_DIALOG_MODE1_REPORT DIALOG DISCARDABLE  0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "报告发布模式"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,284
+    LTEXT           "发布时间范围（小时）：",IDC_STATIC,14,20,110,8
+    EDITTEXT        IDC_EDIT_MODE1_TIME_RANGE,127,18,110,12,ES_AUTOHSCROLL
+    LTEXT           "延迟时间（分，0-不延迟）：",IDC_STATIC,14,36,110,8
+    EDITTEXT        IDC_EDIT_MODE1_TIME_DELAY,127,34,110,12,ES_AUTOHSCROLL
+    LTEXT           "数据刷新时间（秒）：",IDC_STATIC,14,52,110,8
+    EDITTEXT        IDC_EDIT_MODE1_REFRESH_IDLE,127,50,110,12,ES_AUTOHSCROLL
+    LTEXT           "屏幕刷新时间（秒）：",IDC_STATIC,14,68,110,8
+    EDITTEXT        IDC_EDIT_MODE1_REFRESH_SCREEN,127,66,110,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "病人类型选择：",IDC_STATIC,14,85,110,8
+    COMBOBOX        IDC_COMBO_MODE1_ADMISSION_SOURCE,127,82,110,200,
+                    CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "结束显示状态：",IDC_STATIC,14,100,110,8
+    COMBOBOX        IDC_COMBO_MODE1_EXCLUDE_OUT_STATUS,127,98,110,200,
+                    CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据排序规则：",IDC_STATIC,14,117,110,8
+    COMBOBOX        IDC_COMBO_MODE1_ORDER_MODE,127,114,110,200,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "其他配置",IDC_STATIC,254,7,237,284
+    LTEXT           "院区选择：",IDC_STATIC,14,132,110,8
+    COMBOBOX        IDC_COMBO_MODE1_SOURCE_HOSPITAL,127,130,110,200,
+                    CBS_DROPDOWNLIST | CBS_OWNERDRAWVARIABLE | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_MODE2_SINGLE_QUEUE DIALOG DISCARDABLE  0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "单队列等候模式"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,284
+    LTEXT           "队列（索引值）：",IDC_STATIC,14,20,110,8
+    EDITTEXT        IDC_EDIT_MODE2_DEVICE_INDEX,127,18,110,12,ES_AUTOHSCROLL
+    LTEXT           "刷新时间间隔（秒）：",IDC_STATIC,14,36,110,8
+    EDITTEXT        IDC_EDIT_MODE2_REFRESH_IDLE,127,34,110,12,ES_AUTOHSCROLL
+    GROUPBOX        "可选队列",IDC_STATIC,254,7,237,284
+    CONTROL         "List2",IDC_LIST_DEVICE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,261,18,223,98
+END
+
+IDD_DIALOG_VIDEO DIALOGEX 0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "视频显示"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_VIDEO,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,237,284
+    GROUPBOX        "显示内容",IDC_STATIC,254,7,237,263
+    LTEXT           "顺序号：",IDC_STATIC,261,20,110,8
+    EDITTEXT        IDC_EDIT_VIDEO_ORDER,374,18,110,12,ES_AUTOHSCROLL
+    LTEXT           "显示长度（字符数）：",IDC_STATIC,261,36,110,8
+    EDITTEXT        IDC_EDIT_VIDEO_LENGTH,374,34,110,12,ES_AUTOHSCROLL
+    LTEXT           "显示内容：",IDC_STATIC,261,52,110,8
+    EDITTEXT        IDC_EDIT_VIDEO_CONTENT,374,50,110,12,ES_AUTOHSCROLL
+    LTEXT           "|1001| - 队列名称\n|1002| - 排队号\n|1003| - 病人姓名\n|1004| - 病人编号\n|1005| - 门诊住院号\n|1006| - 检查号\n|1007| - 呼叫器名称\n|1008| - 类型（急诊、预约）|1009| - 状态（检查、等候）\n|1010| - 登记时间 \n|1011| - 呼叫状态",
+                    IDC_STATIC,374,68,110,100
+    PUSHBUTTON      "文字颜色",IDC_BUTTON_VIDEO_FOREGROUND,261,167,50,12
+    CTEXT           "呼叫区文字",IDC_STATIC_CONTROLLER,261,183,223,80,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "添加",IDC_BUTTON_INSERT,254,277,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,350,277,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,441,277,50,14
+END
+
+IDD_DIALOG_VOICE DIALOG DISCARDABLE  0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "语音播放"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,284
+    CONTROL         "播放语音",IDC_CHECK_VOICE_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,19,47,10
+    LTEXT           "重呼次数与时间间隔（秒）：",IDC_STATIC,14,36,110,8
+    EDITTEXT        IDC_EDIT_VOICE_REPEAT,127,34,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VOICE_INTERVAL,187,34,50,12,ES_AUTOHSCROLL
+    LTEXT           "语音格式：",IDC_STATIC,14,86,110,8
+    EDITTEXT        IDC_EDIT_VOICE_FORMAT,14,98,223,80,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    LTEXT           "<毫秒数> - 停顿时间\n|1001| - 队列名称\n|1002| - 排队号\n|1003| - 病人姓名\n|1004| - 病人编号\n|1005| - 门诊住院号\n|1006| - 检查号\n|1007| - 呼叫器名称\n|1008| - 类型（急诊、预约）|1009| - 状态（检查、等候）",
+                    IDC_STATIC,127,185,110,100
+    GROUPBOX        "其他配置",IDC_STATIC,254,7,237,284
+    CONTROL         "播放提示音",IDC_CHECK_PROMPTVOICE_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,63,19,51,10
+    CONTROL         "使用科大飞讯语音合成",IDC_CHECK_BUSEKDFX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,49,111,11
+    LTEXT           "科大飞讯序列号：",IDC_STATIC,15,65,73,12
+    EDITTEXT        IDC_EDIT_SERIESID,92,65,143,11,ES_AUTOHSCROLL
+    LTEXT           "格式：PTMQPJ-V8JHK5-L2Y4EQ",IDC_STATIC,92,77,143,9
+END
+
+IDD_DIALOG_MODE3_SINGLE_QUEUE_SHOWALL DIALOGEX 0, 0, 478, 326
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "单队列全显示模式"
+FONT 10, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "基本配置：",IDC_STATIC,7,7,224,78
+    GROUPBOX        "可选队列",IDC_STATIC,251,7,220,81
+    GROUPBOX        "分栏配置：",IDC_STATIC,7,87,464,232
+    LTEXT           "分栏名：",IDC_STATIC,249,103,52,8
+    LTEXT           "分栏名区域(矩形左、上、右、下)：",IDC_STATIC,249,129,
+                    119,8
+    LTEXT           "分栏行数：",IDC_STATIC,249,141,41,8
+    LTEXT           "分栏列数:",IDC_STATIC,344,141,37,8
+    EDITTEXT        IDC_MODE3_COLUMN_NAME,318,99,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_LEFT,371,127,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_RIGHT,419,127,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_TOP,395,127,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_BOTTOM,443,127,21,12,ES_AUTOHSCROLL
+    LTEXT           "分栏序号：",IDC_STATIC,249,116,52,8
+    EDITTEXT        IDC_MODE3_COLUMN_ID,318,112,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_ROWS,318,139,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MODE3_COLUMN_LINES,391,139,21,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_MODE3_COLUMNSET,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,99,223,124
+    CONTROL         "List2",IDC_LIST_MODE3_QUEUE,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,303,17,162,63
+    PUSHBUTTON      "添加",IDC_BUTTON_MODE3_ADD,253,265,42,14
+    PUSHBUTTON      "修改",IDC_BUTTON_MODE3_CHANGE,311,265,42,14
+    PUSHBUTTON      "删除",IDC_BUTTON_MODE3_DELETE,367,265,42,14
+    CTEXT           "分栏名",IDC_MODE3_COLUMN_NAME_DEMO,14,252,73,59,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "分栏",IDC_MODE3_COLUMN_DEMO,159,252,69,58,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    PUSHBUTTON      "字体",IDC_BUTTON_MODE3_COLUMN_NAME_FONT,14,239,24,11
+    PUSHBUTTON      "前景色",IDC_BUTTON_MODE3_COLUME_NAME_FTCOLOR,64,239,24,
+                    11
+    PUSHBUTTON      "字体",IDC_BUTTON_MODE3_COLUMN_FONT,159,239,24,11
+    PUSHBUTTON      "前景色",IDC_BUTTON_MODE3_COLUMN_FTCOLOR,207,239,24,11
+    PUSHBUTTON      "背景色",IDC_BUTTON_MODE3_COLUMN_NAME_BKCOLOR,39,239,24,
+                    11
+    LTEXT           "刷新时间间隔",IDC_STATIC,13,31,56,10
+    LTEXT           "队列索引",IDC_STATIC,13,16,44,10
+    EDITTEXT        IDC_EDIT_MODE3_QUEUEINDEX,82,14,61,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MODE3_RENOVATETIME,82,28,61,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "背景色",IDC_BUTTON_MODE3_COLUMN_BKCOLOR,183,239,24,11
+    CONTROL         "水平、垂直显示（点击为水平）",IDC_CHECK_BShowHorizontal,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,48,130,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_CONTROLLER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_MODE0_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_MODE1_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_MODE2_SINGLE_QUEUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_VIDEO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_VOICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_MODE3_SINGLE_QUEUE_SHOWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\eRadSetQueueController.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_CONTROLLER DLGINIT
+BEGIN
+    IDC_COMBO_CONTROLLER_MODE, 0x403, 13, 0
+0xa3b3, 0xe6b9, 0xc5c5, 0xd3b6, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_CONTROLLER_MODE, 0x403, 13, 0
+0xa8b1, 0xe6b8, 0xa2b7, 0xbcb2, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_CONTROLLER_MODE, 0x403, 15, 0
+0xa5b5, 0xd3b6, 0xd0c1, 0xc8b5, 0xf2ba, 0xa3c4, 0xbdca, "\000" 
+    IDC_COMBO_CONTROLLER_MODE, 0x403, 15, 0
+0xa5b5, 0xd3b6, 0xd0c1, 0xd0c1, 0xedb1, 0xa3c4, 0xbdca, "\000" 
+    0
+END
+
+IDD_DIALOG_MODE1_REPORT DLGINIT
+BEGIN
+    IDC_COMBO_MODE1_ORDER_MODE, 0x403, 9, 0
+0xa1b2, 0xcbc8, 0xd5d0, 0xfbc3, "\000" 
+    IDC_COMBO_MODE1_ORDER_MODE, 0x403, 7, 0
+0xecbc, 0xe9b2, 0xc5ba, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "伊莱达排队管理系统软件V3.0控制台配置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROLLER_NODE     "控制台编号"
+    IDS_CONTROLLER_NAME     "控制台名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIDEO_ORDER         "顺序号"
+    IDS_VIDEO_LENGTH        "显示长度（汉字数）"
+    IDS_VIDEO_CONTENT       "显示内容"
+    IDS_COLUMNID            "分栏ID"
+    IDS_COLUMNNAME          "分栏名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEVICE_INDEX        "队列索引"
+    IDS_DEVICE_NAME         "队列名称"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\eRadSetQueueController.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

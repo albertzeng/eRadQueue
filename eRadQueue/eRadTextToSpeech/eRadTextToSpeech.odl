@@ -1,0 +1,16 @@
+// eRadTextToSpeech.odl : type library source for eRadTextToSpeech.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (eRadTextToSpeech.tlb).
+
+[ uuid(72AD29C1-397C-4822-A00E-EBFB0BF466C7), version(1.0) ]
+library ERadTextToSpeech
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

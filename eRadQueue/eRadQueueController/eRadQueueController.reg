@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\ERadQueueController.Application = ERadQueueController Application
+HKEY_CLASSES_ROOT\ERadQueueController.Application\CLSID = {24FCB792-8383-4EB6-9205-A4ECDFF5D8FA}
+
+HKEY_CLASSES_ROOT\CLSID\{24FCB792-8383-4EB6-9205-A4ECDFF5D8FA} = ERadQueueController Application
+HKEY_CLASSES_ROOT\CLSID\{24FCB792-8383-4EB6-9205-A4ECDFF5D8FA}\ProgId = ERadQueueController.Application
+HKEY_CLASSES_ROOT\CLSID\{24FCB792-8383-4EB6-9205-A4ECDFF5D8FA}\LocalServer32 = ERADQUEUECONTROLLER.EXE

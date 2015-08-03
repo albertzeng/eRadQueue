@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{3FFCE916-947E-4768-9F49-7200C9104BA0} = s 'DBAPI'
+		'DBAPI.EXE'
+		{
+			val AppID = s {3FFCE916-947E-4768-9F49-7200C9104BA0}
+		}
+	}
+}

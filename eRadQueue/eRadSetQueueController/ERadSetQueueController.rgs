@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{2A115564-C505-4077-98DE-CA27C8EAB2E6} = s 'ERadSetQueueController'
+		'ERadSetQueueController.EXE'
+		{
+			val AppID = s {2A115564-C505-4077-98DE-CA27C8EAB2E6}
+		}
+	}
+}

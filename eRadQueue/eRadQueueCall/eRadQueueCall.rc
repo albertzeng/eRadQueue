@@ -1,0 +1,374 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\eRadQueueCall.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "eRadQueueCall DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "eRadQueueCall\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "eRadQueueCall.DLL\0"
+            VALUE "ProductName", "eRadQueueCall Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ERADQUEUECALL       REGISTRY DISCARDABLE    "ERadQueueCall.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_GENERAL DIALOGEX 0, 0, 498, 298
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "基本配置"
+FONT 10, "宋体"
+BEGIN
+    GROUPBOX        "基本配置",IDC_STATIC,7,7,237,231
+    LTEXT           "呼叫器编号：",IDC_STATIC,14,20,110,8
+    EDITTEXT        IDC_EDIT_CALL_NODE,127,18,110,12,ES_AUTOHSCROLL
+    LTEXT           "呼叫器名称：",IDC_STATIC,14,36,110,8
+    EDITTEXT        IDC_EDIT_CALL_NAME,127,34,110,12,ES_AUTOHSCROLL
+    LTEXT           "控制台编号（\\No1\\\\No2\\）：",IDC_STATIC,14,52,110,8
+    EDITTEXT        IDC_EDIT_CALL_CONSOLE,127,50,110,12,ES_AUTOHSCROLL
+    LTEXT           "可呼叫队列（\\No1\\\\No2\\）：",IDC_STATIC,14,69,110,8
+    EDITTEXT        IDC_EDIT_CALL_DEVICE,127,66,110,12,ES_AUTOHSCROLL
+    CONTROL         "按队列顺序呼叫",IDC_CHECK_CALL_PRIORITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,83,97,10
+    GROUPBOX        "日志管理",IDC_STATIC,7,245,237,46
+    CONTROL         "跟踪类型",IDC_CHECK_LOG_TRACK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,258,110,10
+    CONTROL         "错误类型",IDC_CHECK_LOG_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,127,258,110,10
+    CONTROL         "调试类型",IDC_CHECK_LOG_DEBUG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,276,110,10
+    CONTROL         "消息类型",IDC_CHECK_LOG_MESSAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,276,110,10
+    GROUPBOX        "数据配置",IDC_STATIC,254,7,237,150
+    LTEXT           "数据库：",IDC_STATIC,261,20,88,8
+    PUSHBUTTON      "...",IDC_BUTTON_EIS_DATABASE,349,18,20,12,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_EIS_DATABASE,374,18,110,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "使用科室：",IDC_STATIC,261,36,110,8
+    COMBOBOX        IDC_COMBO_DEPARTMENT,374,34,110,200,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List2",IDC_LIST_DEVICE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,261,50,223,98
+    GROUPBOX        "操作管理",IDC_STATIC,254,167,237,124
+    CONTROL         "支持“顺呼”",IDC_CHECK_CALL_ORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,179,110,10
+    CONTROL         "支持“采集报告”",IDC_CHECK_CALL_CAPTURE_REPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,374,177,110,10
+    CONTROL         "支持“采集”",IDC_CHECK_CALL_CAPTURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,195,110,10
+    CONTROL         "支持“报告”",IDC_CHECK_CALL_REPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,374,195,110,10
+    CONTROL         "支持“办理”",IDC_CHECK_CALL_COMPLETE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,211,110,10
+    CONTROL         "支持“弃号”",IDC_CHECK_CALL_CANCEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,374,211,110,10
+    CONTROL         "支持“顺延”，每次顺延：",IDC_CHECK_CALL_RESET,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,227,110,10
+    EDITTEXT        IDC_EDIT_CALL_INCREMENT,374,226,110,12,ES_AUTOHSCROLL
+    CONTROL         "支持“预呼等候”",IDC_CHECK_CALL_WAIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,374,243,110,10
+    CONTROL         "支持上下午（HHMM）：",IDC_CHECK_AFTERNOON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,259,110,10
+    EDITTEXT        IDC_EDIT_AFTERNOON_TIME,374,258,110,12,ES_AUTOHSCROLL
+    LTEXT           "自动刷新间隔（秒）：",IDC_STATIC,261,276,72,8
+    EDITTEXT        IDC_EDIT_AUTO_REFRESH,335,274,31,12,ES_AUTOHSCROLL
+    CONTROL         "个人信息保存在配置文件中",
+                    IDC_CHECK_PRIVATE_SAVE_TO_FILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,97,110,10
+    CONTROL         "支持“未准备”",IDC_CHECK_CALL_UNREADY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,243,110,10
+    CONTROL         "支持“顺呼不显示报告界面”",
+                    IDC_CHECK_CALL_ORDER_NO_REPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,374,276,110,10
+    LTEXT           "呼叫器名称（\\No1\\\\No2\\）：",IDC_STATIC,23,182,110,8
+    EDITTEXT        IDC_EDIT_CALL_ROOM,136,180,100,12,ES_AUTOHSCROLL
+    LTEXT           "注:上面呼叫器名称(\\No1\\\\No2\\)配置呼叫器名称，以用于在呼叫器界面动态设置病人被哪个呼叫器呼叫",
+                    IDC_STATIC,14,211,222,18
+    LTEXT           "呼叫器编号（\\No1\\\\No2\\）：",IDC_STATIC,23,196,110,8
+    EDITTEXT        IDC_EDIT_CALL_ROOMNODE,136,194,100,12,ES_AUTOHSCROLL
+    CONTROL         "支持“呼叫器界面设置呼叫器”",IDC_CHECK_CALL_QUEUEROOM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,169,110,10
+    CONTROL         "支持按照门诊住院类型分配队列",
+                    IDC_CHECK_CALL_QUEUE_PATIENT_KIND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,111,133,10
+    LTEXT           "门诊队列：",IDC_STATIC,23,125,49,8
+    LTEXT           "住院队列：",IDC_STATIC,23,139,49,8
+    EDITTEXT        IDC_EDIT_MZ_QUEUE,77,123,100,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ZY_QUEUE,77,137,100,12,ES_AUTOHSCROLL
+    CONTROL         "不支持右键菜单选择呼叫",IDC_CHECK_NO_POPMENU_ORDERCALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,127,83,110,10
+    CONTROL         "支持""预呼""",IDC_CHECK_CALL_PRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,127,97,110,10
+END
+
+IDD_DIALOG_QUEUE DIALOG DISCARDABLE  0, 0, 293, 290
+STYLE WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "伊莱达排队管理系统软件V3.0呼叫器"
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_QUEUE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,0,117,283
+    PUSHBUTTON      "顺序呼叫",IDC_BUTTON_CALL_ORDER,236,0,50,14
+    PUSHBUTTON      "采集报告",IDC_BUTTON_CALL_CAPTURE_REPORT,236,16,50,14
+    PUSHBUTTON      "采集",IDC_BUTTON_CALL_CAPTURE,236,33,50,14
+    PUSHBUTTON      "报告",IDC_BUTTON_CALL_REPORT,236,49,50,14
+    PUSHBUTTON      "重呼",IDC_BUTTON_CALL_REPEAT,236,67,50,14,WS_DISABLED
+    PUSHBUTTON      "刷新",IDC_BUTTON_REFRESH,236,84,50,14
+    CONTROL         "自动刷新",IDC_CHECK_AUTO_REFRESH,"Button",
+                    BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,
+                    236,116,50,12
+    CONTROL         "预呼等候",IDC_CHECK_CALL_WAIT,"Button",BS_AUTOCHECKBOX | 
+                    BS_CENTER | BS_VCENTER | WS_TABSTOP,236,128,50,12
+    CONTROL         "全部机房",IDC_CHECK_CALL_ALL_ROOM,"Button",
+                    BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,
+                    236,140,50,12
+    COMBOBOX        IDC_COMBO_QUEUE_STATUS,236,152,50,200,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "办理",IDC_BUTTON_CALL_COMPLETE,236,180,50,14,
+                    WS_DISABLED
+    PUSHBUTTON      "顺延",IDC_BUTTON_CALL_RESET,236,195,50,14,WS_DISABLED
+    PUSHBUTTON      "未准备",IDC_BUTTON_CALL_UNREADY,236,210,50,14,
+                    WS_DISABLED
+    PUSHBUTTON      "弃号",IDC_BUTTON_CALL_CANCEL,236,225,50,14,WS_DISABLED
+    COMBOBOX        IDC_COMBO_QUEUE_ROOM,236,167,50,200,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_QUEUE_SETTING,236,239,50,200,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "预呼",IDC_BUTTON_CALL_PRE,236,254,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 491
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DIALOG_QUEUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        BOTTOMMARGIN, 283
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\eRadQueueCall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_QUEUE MENU DISCARDABLE 
+BEGIN
+    POPUP "QUEUE"
+    BEGIN
+        MENUITEM "呼叫",                        IDM_QUEUE_CALL_SELECT
+        MENUITEM "采集报告",                    IDM_QUEUE_CALL_CAPTURE_REPORT
+
+        MENUITEM "采集",                        IDM_QUEUE_CALL_CAPTURE
+        MENUITEM "报告",                        IDM_QUEUE_CALL_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM "办理",                        IDM_QUEUE_CALL_COMPLETE
+        MENUITEM "顺延",                        IDM_QUEUE_CALL_RESET
+        MENUITEM "未准备",                      IDM_QUEUE_CALL_UNREADY
+        MENUITEM "弃号",                        IDM_QUEUE_CALL_CANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEVICE_INDEX        "队列索引"
+    IDS_DEVICE_NAME         "队列名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_QUEUE_DEVICE_ALIAS  "队列名称"
+    IDS_QUEUE_NUMBER        "排队号"
+    IDS_QUEUE_STATUS        "状态"
+    IDS_QUEUE_TS            "时间"
+    IDS_QUEUE_PATIENTS_ALIAS "病人姓名"
+    IDS_QUEUE_PATIENTS_ID   "病人编号"
+    IDS_QUEUE_ADMISSION_ID  "门诊住院号"
+    IDS_QUEUE_ACCESSION_NUMBER "检查号"
+    IDS_QUEUE_EXAMINE_ALIAS "检查项目"
+    IDS_QUEUE_BODIES_ALIAS  "检查部位"
+    IDS_QUEUE_NUMBER_RESET  "顺序号"
+    IDS_QUEUE_CALL_NAME     "机房"
+    IDS_QUEUE_CLASS         "类型"
+    IDS_QUEUE_CALL_TS       "呼叫时间"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MESSAGE_QUEUE_EMPTY "队列已空！\n\n没有新的侯诊病人，请耐心等待，并检查所有已呼叫的病人是否已经处理完毕。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MESSAGE_ERROR       "错误!"
+    IDS_MESSAGE_DATA_ERROR  "数据错误！\n\n当前数据可能已经被修改，请在重新刷新相关数据后重试。\n\n如果还存在问题，请记录相关数据并联系系统管理员。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\eRadQueueCall.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

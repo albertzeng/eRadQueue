@@ -1,0 +1,16 @@
+// eRadSetQueueController.odl : type library source for eRadSetQueueController.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (eRadSetQueueController.tlb).
+
+[ uuid(FFF5158D-1ED4-4EA9-9FB2-74D59D29FE6B), version(1.0) ]
+library ERadSetQueueController
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

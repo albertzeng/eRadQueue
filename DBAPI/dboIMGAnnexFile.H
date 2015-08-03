@@ -1,0 +1,88 @@
+// dboIMGAnnexFile.H : Declaration of the CdboIMGAnnexFile class
+
+#ifndef __DBOIMGANNEXFILE_H_
+#define __DBOIMGANNEXFILE_H_
+
+class CdboIMGAnnexFileAccessor
+{
+public:
+	LONG m_AnnexIndex;
+	TCHAR m_AnnexSOPInstUID[65];
+	TCHAR m_AnnexSOPClassUID[65];
+	TCHAR m_AnnexFileName[101];
+	LONG m_AnnexFileSize;
+	LONG m_AnnexAvailable;
+	LONG m_AnnexStorage;
+	LONG m_AnnexStorageServer;
+	LONG m_AnnexDVDIndex;
+	TCHAR m_AnnexFileSetID[17];
+	TCHAR m_AnnexFileSetUID[65];
+	LONG m_AnnexFlags;
+	TCHAR m_AnnexTS[17];
+	TCHAR m_AnnexSourceAE[17];
+	TCHAR m_PatientsName[65];
+	TCHAR m_PatientsID[65];
+	TCHAR m_PatientsDOB[17];
+	TCHAR m_PatientsSex[17];
+	TCHAR m_StudiesInstUID[65];
+	TCHAR m_StudiesDate[17];
+	TCHAR m_AccessionNumber[65];
+
+BEGIN_COLUMN_MAP(CdboIMGAnnexFileAccessor)
+	COLUMN_ENTRY(1, m_AnnexIndex)
+	COLUMN_ENTRY(2, m_AnnexSOPInstUID)
+	COLUMN_ENTRY(3, m_AnnexSOPClassUID)
+	COLUMN_ENTRY(4, m_AnnexFileName)
+	COLUMN_ENTRY(5, m_AnnexFileSize)
+	COLUMN_ENTRY(6, m_AnnexAvailable)
+	COLUMN_ENTRY(7, m_AnnexStorage)
+	COLUMN_ENTRY(8, m_AnnexStorageServer)
+	COLUMN_ENTRY(9, m_AnnexDVDIndex)
+	COLUMN_ENTRY(10, m_AnnexFileSetID)
+	COLUMN_ENTRY(11, m_AnnexFileSetUID)
+	COLUMN_ENTRY(12, m_AnnexFlags)
+	COLUMN_ENTRY(13, m_AnnexTS)
+	COLUMN_ENTRY(14, m_AnnexSourceAE)
+	COLUMN_ENTRY(15, m_PatientsName)
+	COLUMN_ENTRY(16, m_PatientsID)
+	COLUMN_ENTRY(17, m_PatientsDOB)
+	COLUMN_ENTRY(18, m_PatientsSex)
+	COLUMN_ENTRY(19, m_StudiesInstUID)
+	COLUMN_ENTRY(20, m_StudiesDate)
+	COLUMN_ENTRY(21, m_AccessionNumber)
+END_COLUMN_MAP()
+
+DEFINE_COMMAND(CdboIMGAnnexFileAccessor, _T(" \
+	SELECT \
+		AnnexIndex, \
+		AnnexSOPInstUID, \
+		AnnexSOPClassUID, \
+		AnnexFileName, \
+		AnnexFileSize, \
+		AnnexAvailable, \
+		AnnexStorage, \
+		AnnexStorageServer, \
+		AnnexDVDIndex, \
+		AnnexFileSetID, \
+		AnnexFileSetUID, \
+		AnnexFlags, \
+		AnnexTS, \
+		AnnexSourceAE, \
+		PatientsName, \
+		PatientsID, \
+		PatientsDOB, \
+		PatientsSex, \
+		StudiesInstUID, \
+		StudiesDate, \
+		AccessionNumber  \
+		FROM IMGAnnexFile"))
+
+	// You may wish to call this function if you are inserting a record and wish to
+	// initialize all the fields, if you are not going to explicitly set all of them.
+	void ClearRecord()
+	{
+		memset(this, 0, sizeof(*this));
+	}
+};
+
+#endif // __DBOIMGANNEXFILE_H_

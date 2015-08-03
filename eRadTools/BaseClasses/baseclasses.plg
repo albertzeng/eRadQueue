@@ -1,0 +1,125 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BaseClasses - Win32 Debug Unicode--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17E.tmp" with contents
+[
+/nologo /Gz /MTd /W3 /Gm /Gi /GX /Zi /Od /I "." /I "..\..\..\..\include" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WIN32_DCOM" /D "DEBUG" /D WINVER=0x400 /D "WIN32" /D "UNICODE" /D "_UNICODE" /Fp"Debug_Unicode/baseclasses.pch" /Yu"streams.h" /Fo"Debug_Unicode/" /Fd"Debug_Unicode/" /FD /GZ /c 
+"E:\Works\eRadTools\BaseClasses\amextra.cpp"
+"E:\Works\eRadTools\BaseClasses\amfilter.cpp"
+"E:\Works\eRadTools\BaseClasses\amvideo.cpp"
+"E:\Works\eRadTools\BaseClasses\combase.cpp"
+"E:\Works\eRadTools\BaseClasses\cprop.cpp"
+"E:\Works\eRadTools\BaseClasses\ctlutil.cpp"
+"E:\Works\eRadTools\BaseClasses\ddmm.cpp"
+"E:\Works\eRadTools\BaseClasses\dllsetup.cpp"
+"E:\Works\eRadTools\BaseClasses\mtype.cpp"
+"E:\Works\eRadTools\BaseClasses\outputq.cpp"
+"E:\Works\eRadTools\BaseClasses\pstream.cpp"
+"E:\Works\eRadTools\BaseClasses\pullpin.cpp"
+"E:\Works\eRadTools\BaseClasses\refclock.cpp"
+"E:\Works\eRadTools\BaseClasses\renbase.cpp"
+"E:\Works\eRadTools\BaseClasses\schedule.cpp"
+"E:\Works\eRadTools\BaseClasses\seekpt.cpp"
+"E:\Works\eRadTools\BaseClasses\source.cpp"
+"E:\Works\eRadTools\BaseClasses\strmctl.cpp"
+"E:\Works\eRadTools\BaseClasses\sysclock.cpp"
+"E:\Works\eRadTools\BaseClasses\transfrm.cpp"
+"E:\Works\eRadTools\BaseClasses\transip.cpp"
+"E:\Works\eRadTools\BaseClasses\videoctl.cpp"
+"E:\Works\eRadTools\BaseClasses\vtrans.cpp"
+"E:\Works\eRadTools\BaseClasses\winctrl.cpp"
+"E:\Works\eRadTools\BaseClasses\winutil.cpp"
+"E:\Works\eRadTools\BaseClasses\wxdebug.cpp"
+"E:\Works\eRadTools\BaseClasses\wxlist.cpp"
+"E:\Works\eRadTools\BaseClasses\wxutil.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17F.tmp" with contents
+[
+/nologo /Gz /MTd /W3 /Gm /Gi /GX /Zi /Od /I "." /I "..\..\..\..\include" /D "_DEBUG" /D "_MBCS" /D "_LIB" /D "_WIN32_DCOM" /D "DEBUG" /D WINVER=0x400 /D "WIN32" /D "UNICODE" /D "_UNICODE" /Fp"Debug_Unicode/baseclasses.pch" /Yc"streams.h" /Fo"Debug_Unicode/" /Fd"Debug_Unicode/" /FD /GZ /c 
+"E:\Works\eRadTools\BaseClasses\dllentry.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP180.tmp" with contents
+[
+strmiids.lib /nologo /out:"Debug_Unicode\strmbasd.lib" /nodefaultlib 
+.\Debug_Unicode\amextra.obj
+.\Debug_Unicode\amfilter.obj
+.\Debug_Unicode\amvideo.obj
+.\Debug_Unicode\combase.obj
+.\Debug_Unicode\cprop.obj
+.\Debug_Unicode\ctlutil.obj
+.\Debug_Unicode\ddmm.obj
+.\Debug_Unicode\dllentry.obj
+.\Debug_Unicode\dllsetup.obj
+.\Debug_Unicode\mtype.obj
+.\Debug_Unicode\outputq.obj
+.\Debug_Unicode\pstream.obj
+.\Debug_Unicode\pullpin.obj
+.\Debug_Unicode\refclock.obj
+.\Debug_Unicode\renbase.obj
+.\Debug_Unicode\schedule.obj
+.\Debug_Unicode\seekpt.obj
+.\Debug_Unicode\source.obj
+.\Debug_Unicode\strmctl.obj
+.\Debug_Unicode\sysclock.obj
+.\Debug_Unicode\transfrm.obj
+.\Debug_Unicode\transip.obj
+.\Debug_Unicode\videoctl.obj
+.\Debug_Unicode\vtrans.obj
+.\Debug_Unicode\winctrl.obj
+.\Debug_Unicode\winutil.obj
+.\Debug_Unicode\wxdebug.obj
+.\Debug_Unicode\wxlist.obj
+.\Debug_Unicode\wxutil.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP180.tmp"
+<h3>Output Window</h3>
+Compiling...
+dllentry.cpp
+Compiling...
+amextra.cpp
+amfilter.cpp
+amvideo.cpp
+combase.cpp
+cprop.cpp
+ctlutil.cpp
+ddmm.cpp
+dllsetup.cpp
+mtype.cpp
+outputq.cpp
+pstream.cpp
+pullpin.cpp
+refclock.cpp
+renbase.cpp
+schedule.cpp
+seekpt.cpp
+source.cpp
+strmctl.cpp
+sysclock.cpp
+transfrm.cpp
+Generating Code...
+Compiling...
+transip.cpp
+videoctl.cpp
+vtrans.cpp
+winctrl.cpp
+winutil.cpp
+wxdebug.cpp
+wxlist.cpp
+wxutil.cpp
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+strmbasd.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

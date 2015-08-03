@@ -1,0 +1,15 @@
+; eRadQueueCall.def : Declares the module parameters for the DLL.
+
+LIBRARY      "eRadQueueCall"
+DESCRIPTION  'eRadQueueCall Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	DllCanUnloadNow PRIVATE
+	DllGetClassObject PRIVATE
+	DllRegisterServer PRIVATE
+	API_OpenConfiguration PRIVATE
+	API_SetQueueCallProc PRIVATE
+	API_StartQueueCall PRIVATE
+	API_CloseQueueCall PRIVATE
+	API_QueueCallComplete PRIVATE

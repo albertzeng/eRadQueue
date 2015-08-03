@@ -1,0 +1,16 @@
+// DBAPI.odl : type library source for DBAPI.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (DBAPI.tlb).
+
+[ uuid(4BEAAB07-0B8D-47B6-AEB5-6EC570FC9755), version(1.0) ]
+library DBAPI
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

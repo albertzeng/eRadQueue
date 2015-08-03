@@ -1,0 +1,42 @@
+// eRadQueueController.odl : type library source for eRadQueueController.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (eRadQueueController.tlb).
+
+[ uuid(F2192893-7FA6-44FE-95E9-5C05C4A6C3A4), version(1.0) ]
+library ERadQueueController
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CERadQueueControllerDoc
+	
+	[ uuid(EC77BB09-1E78-4244-A274-F6D9772085DC) ]
+	dispinterface IERadQueueController
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CeRadQueueControllerDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CeRadQueueControllerDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CERadQueueControllerDoc
+	
+	[ uuid(24FCB792-8383-4EB6-9205-A4ECDFF5D8FA) ]
+	coclass ERadQueueController
+	{
+		[default] dispinterface IERadQueueController;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
